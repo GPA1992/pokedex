@@ -1,13 +1,18 @@
 import React from 'react';
-import GetPokemonWhitRedux from '../../components/getPokemonWhitRedux';
+import GetPokemonByName from '../../components/getPokemonByNameWhitRedux';
+import paisagem from '../../assets/PAISAGEM2.jpg';
+import Header from '../../components/header';
 import GetPokemonList from '../../components/getPokemonList';
-import styles from './styles.module.scss';
+import './main.styles.sass';
 
 function Main() {
     return (
-        <div className={styles.container}>
-            <GetPokemonWhitRedux />
-            <GetPokemonList />
+        <div className="container">
+            <Header />
+            <main>
+                <GetPokemonList />
+            </main>
+            <img id="paisagem" src={paisagem} alt="" />
         </div>
     );
 }
