@@ -17,10 +17,9 @@ function Main() {
                 </div>
                 <div id="detail">
                     <PokemonDetails />
-                    {/* 
                     <div id="poke-div">
                         <img id="catchall-img" src={catchall} alt="" />
-                    </div> */}
+                    </div>
                 </div>
             </main>
             <Footer />
