@@ -7,6 +7,10 @@ Este projeto foi criado com o objetivo de fornecer aos usuários uma lista compl
 - Exibição de detalhes do Pokemon ao clicar em um item da lista
 - Busca por Pokemon por nome ou número de ID
 
+## Para ter acesso a pokedex acesse:
+
+https://gpa-pokedex.netlify.app/
+
 ## Como usar
 
 Este projeto foi criado usando ViteJs, para mais informações acesse.
