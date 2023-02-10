@@ -1,6 +1,6 @@
 # Pokedex
 
-Este projeto foi criado com o objetivo de fornecer aos usuários uma lista completa de todos os Pokemons existentes, com as suas respectivas informações e detalhes. Ele foi construído usando o React e o TypeScript.
+Este projeto foi criado com o objetivo de fornecer aos usuários uma lista completa de todos os Pokemons existentes, com as suas respectivas informações e detalhes. Ele foi construído usando o React e o TypeScript junto da API https://pokeapi.co/.
 
 ## Funcionalidades
 - Lista de todos os Pokemons existentes
