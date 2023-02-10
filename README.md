@@ -11,7 +11,7 @@ Este projeto foi criado com o objetivo de fornecer aos usuários uma lista compl
 
 https://gpa-pokedex.netlify.app/
 
-## Como usar
+## Como instalar localmente
 
 Este projeto foi criado usando ViteJs, para mais informações acesse.
 
