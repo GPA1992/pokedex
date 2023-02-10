@@ -23,6 +23,7 @@
 .pokemon-statics
     display: flex
     flex-direction: column
+    justify-content: center
     align-items: center
     width: 90%
 
@@ -40,6 +41,7 @@
 .pokemon-statics p
     background-color: #e0d6779d
     text-align: center
+    width: 90%
     font-size: 12px
     border: 1px grey solid
     padding: 5px
@@ -49,7 +51,52 @@
     border-radius: 8px
     margin: 10px
 
-#pokemon-info
+.stats
     display: flex
     flex-direction: column
+    justify-content: center
     width: 100%
+
+.stats p
+    background-color: #7779e09d
+    text-align: center
+    font-size: 12px
+    border: 1px grey solid
+    padding: 5px
+    font-family: fira code
+    font-weight: 500
+    color: black
+    border-radius: 8px
+    margin: 10px
+
+.stat-bar
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+#pokemon-info
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    width: 100%
+
+#pokemon-info p
+    width: 90%
+
+#types
+    width: 100%
+
+.power-bar
+    margin: 0px 10px 0px 10px
+    display: flex
+    justify-content: center
+    background-color: purple
+    height: 5px
+    padding: 3px
+
+.power-bar span
+    font-size: 12px
+    font-family: fira code
+    font-weight: 500
+    color: white
