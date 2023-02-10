@@ -15,11 +15,18 @@ export default function SinglePokemon(props: PokemonURL) {
         fetchPokemon();
     }, [pokemons]);
 
+    {
+        /* <a onClick={() => inicioRedirect()} className="navbar" id="homeHeader" href="#photo-info">
+        Inicio
+    </a>; */
+    }
     return (
         <div onClick={() => setPokemonName(props.name)} className="single-pokemon">
             <p>{props.name}</p>
             <img src={pokemonFrontalSprite} alt="" />
-            <button className="pokemon-detail-btn">detalhe</button>
+            <a href="#pokemon-detail" className="pokemon-detail-btn">
+                detalhe
+            </a>
         </div>
     );
 }
