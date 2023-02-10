@@ -39,6 +39,15 @@ export default function GetPokemonList() {
                     );
                 })}
             </div>
+            <br />
+            <div className="next-previous-btn">
+                <button disabled={offset === 0} onClick={() => setOffset(offset - 20)} className="change-pokemons-list">
+                    Anterior
+                </button>
+                <button onClick={() => setOffset(offset + 20)} className="change-pokemons-list">
+                    Próximo
+                </button>
+            </div>
         </div>
     );
 }
