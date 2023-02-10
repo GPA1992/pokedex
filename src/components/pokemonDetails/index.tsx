@@ -44,10 +44,22 @@ export default function PokemonDetails() {
                             <p>{`Altura: ${pokemonDetail?.height}`}</p>
                             <p>{`Peso: ${pokemonDetail?.weight}`}</p>
                             {pokemonDetail?.types?.map((allType, index) => (
-                                <div key={index}>
+                                <div id="types" key={index}>
                                     <p>{`Tipo ${allType.slot}: ${allType.type.name}`}</p>
                                 </div>
                             ))}
+                            <div className="stats">
+                                {pokemonDetail?.stats?.map((allStat, index) => (
+                                    <div key={index} className="stat-bar">
+                                        <p>{`${allStat.stat.name}: ${allStat.base_stat}`}</p>
+                                        <div
+                                            style={{ width: `${allStat.base_stat * 2}px` }}
+                                            className="power-bar"
+                                        ></div>
+                                    </div>
+                                ))}
+                            </div>
+                            <br />
                         </div>
                     </div>
                 )}
