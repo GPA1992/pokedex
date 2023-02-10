@@ -1,27 +1,27 @@
-# React TS Boilerplate
+# Pokedex
 
-O projeto "React TS Boilerplate" é uma aplicação em React que fornece um ambiente pré-configurado para o desenvolvimento de aplicações, pronto para serem utilizadas com TypeScript. Ele inclui configurações prontas para o Redux, Context API e testes, permitindo que o usuário comece a codar imediatamente sem precisar se preocupar com a configuração inicial.
+Este projeto foi criado com o objetivo de fornecer aos usuários uma lista completa de todos os Pokemons existentes, com as suas respectivas informações e detalhes. Ele foi construído usando o React e o TypeScript.
 
-## Recursos incluidos
-
-- React com TypeScript
-- Gerenciamento de estado com Redux
-- Gerenciamento de estado com Context API
-- Suporte a testes unitários
-- Configurações básicas de ESLint e Prettier
+## Funcionalidades
+- Lista de todos os Pokemons existentes
+- Exibição de detalhes do Pokemon ao clicar em um item da lista
+- Busca por Pokemon por nome ou número de ID
 
 ## Como usar
 
-1. Clone o repositório do projeto: `git clone https://github.com/seu-usuario/react-ts-boilerplate.git`
-2. Entre na pasta do projeto: `cd react-ts-boilerplate`
-3. Instale as dependências: `npm install` ou `yarn`
-4. Inicie o projeto: `npm run dev` ou `yarn dev`
-5. Abra o navegador e acesse: `http://localhost:3000`
+Este projeto foi criado usando ViteJs, para mais informações acesse.
 
-## Scripts disponíveis
+https://vitejs.dev/
 
-- `npm dev` ou `yarn dev`: inicia a aplicação em modo de desenvolvimento
-- `npm test` ou `yarn test`: roda os testes unitários
-- `npm run build` ou `yarn build`: cria a versão de produção da aplicação
-- `npm run lint` ou `yarn lint`: checa se o código segue as regras de estilo definidas pelo ESLint
+1. Clone este repositório para sua máquina local
+2. Instale as dependências necessárias executando o comando 'npm install' ou 'yarn' na pasta raiz do projeto
+3. Inicie a aplicação executando o comando 'npm run dev' ou 'yarn dev'
+4. Verifique no terminal o link que será disponibilizado para acesser o site localmente, normalmente o endereço é http://localhost:5173/
 
+## Contribuição
+Se você deseja contribuir para o desenvolvimento deste projeto, siga os seguintes passos:
+1. Fork este repositório
+2. Crie uma nova branch com as suas alterações (`git checkout -b nova-funcionalidade`)
+3. Commit suas alterações (`git commit -m "Adicionando nova funcionalidade"`)
+4. Envie suas alterações para a sua branch (`git push origin nova-funcionalidade`)
+5. Crie uma nova solicitação de pull para o repositório principal
