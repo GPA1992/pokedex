@@ -16,16 +16,11 @@ function Main() {
                     <GetPokemonList />
                 </div>
                 <div id="detail">
-                    <div>
-                        <GetPokemonByName />
-                    </div>
-                    <div>
-                        <PokemonDetails />
-                    </div>
-
+                    <PokemonDetails />
+                    {/* 
                     <div id="poke-div">
                         <img id="catchall-img" src={catchall} alt="" />
-                    </div>
+                    </div> */}
                 </div>
             </main>
             <Footer />
