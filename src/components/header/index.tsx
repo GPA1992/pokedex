@@ -4,8 +4,10 @@ import pokedexLogo from '../../assets/POKEDEX.png';
 
 export default function Header() {
     return (
-        <header>
-            <img src={pokedexLogo} alt="" />
-        </header>
+        <div>
+            <header>
+                <img src={pokedexLogo} alt="" />
+            </header>
+        </div>
     );
 }

@@ -16,6 +16,13 @@ main
     grid-template-areas: "list details"
     flex-direction: row
     width: 1200px
+    overflow-x: hidden
+    @media (max-width: 425px)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 420px
 
 #paisagem
     position: absolute
@@ -32,6 +39,14 @@ main
     flex-direction: column
     justify-content: space-around
     grid-area: details
+    @media (max-width: 425px)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin: 50px 0px 0px 0px
+        height: 620px
+        width: 420px
 
 #pokebola-img
     height: 220px
