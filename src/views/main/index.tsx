@@ -1,7 +1,6 @@
 import React from 'react';
 import GetPokemonByName from '../../components/getPokemonByName';
-import paisagem from '../../assets/PAISAGEM2.jpg';
-import pokebola from '../../assets/POKEBOLA.png';
+import catchall from '../../assets/CATCHALL.png';
 import Header from '../../components/header';
 import GetPokemonList from '../../components/getPokemonList';
 import './main.styles.sass';
@@ -24,12 +23,10 @@ function Main() {
                     </div>
 
                     <div id="poke-div">
-                        <img id="pokebola-img" src={pokebola} alt="" />
-                        <h3>Gotta Catch ‘Em All!</h3>
+                        <img id="catchall-img" src={catchall} alt="" />
                     </div>
                 </div>
             </main>
-            <img id="paisagem" src={paisagem} alt="" />
         </div>
     );
 }
