@@ -10,7 +10,7 @@ export default function GetPokemonByName() {
         <div className="pokemon-whit-name">
             <input
                 placeholder="Pesquise pelo nome ou número"
-                className="inpunt-pokemon-name"
+                className="input-pokemon-name"
                 type="text"
                 onChange={({ target }) => setSearchPokemonName(target.value)}
                 value={searchPokemonName}
