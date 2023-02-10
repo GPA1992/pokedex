@@ -26,6 +26,7 @@ export default function PokemonDetails() {
     return (
         <div id="pokemon-detail" className="pokemon-detail">
             <div className="all-detail">
+                <h3>{pokemonDetail?.name}</h3>
                 {pokemonDetail?.sprites && (
                     <img
                         className="pokemon-detail-img-info"
@@ -38,7 +39,6 @@ export default function PokemonDetails() {
                     <p>Nome invalido</p>
                 ) : (
                     <div className="pokemon-statics">
-                        <h3>{pokemonDetail?.name}</h3>
                         <div id="pokemon-info">
                             <p>{`Nº: ${pokemonDetail?.id}`}</p>
                             <p>{`Altura: ${pokemonDetail?.height}`}</p>

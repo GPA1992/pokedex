@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import useGlobalContext from '../../hooks/useGlobalContext';
 import { nextOrPreviousFecthPokemons } from '../../services/fetchPokemons';
+import GetPokemonByName from '../getPokemonByName';
 import SinglePokemon from '../singlePokemon';
 import './pokemonList.styles.sass';
 
@@ -22,6 +23,7 @@ export default function GetPokemonList() {
                 <button disabled={offset === 0} onClick={() => setOffset(offset - 20)} className="change-pokemons-list">
                     Anterior
                 </button>
+                <GetPokemonByName />
                 <button onClick={() => setOffset(offset + 20)} className="change-pokemons-list">
                     Próximo
                 </button>
