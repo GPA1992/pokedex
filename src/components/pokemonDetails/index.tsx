@@ -24,7 +24,7 @@ export default function PokemonDetails() {
     }, [pokemonName]);
 
     return (
-        <div className="pokemon-detail">
+        <div id="pokemon-detail" className="pokemon-detail">
             <div className="all-detail">
                 {pokemonDetail?.sprites && (
                     <img
