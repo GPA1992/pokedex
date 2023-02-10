@@ -1,12 +1,16 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 import { createContext, Dispatch, SetStateAction } from 'react';
-import { PokemonList } from '../types/pokemon';
+import { PokemonURL, Pokemon } from '../types/pokemon';
 
 type GlobalContextType = {
     count: number;
     setCount: Dispatch<SetStateAction<number>>;
-    pokemons: Array<PokemonList>;
-    setPokemons: Dispatch<SetStateAction<never[]>>;
+    pokemons: Array<PokemonURL>;
+    setPokemons: Dispatch<SetStateAction<PokemonURL[]>>;
+    pokemonDetails: Pokemon;
+    setPokemonDetails: Dispatch<SetStateAction<Pokemon>>;
+    pokemonName: string;
+    setPokemonName: Dispatch<SetStateAction<string>>;
 };
 
 const GlobalContext = createContext<GlobalContextType>({
@@ -14,6 +18,10 @@ const GlobalContext = createContext<GlobalContextType>({
     setCount: () => {},
     pokemons: [],
     setPokemons: () => {},
+    pokemonDetails: {} as Pokemon,
+    setPokemonDetails: () => {},
+    pokemonName: '',
+    setPokemonName: () => {},
 });
 
 export default GlobalContext;

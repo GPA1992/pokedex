@@ -1,24 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import useGlobalContext from '../../hooks/useGlobalContext';
-import { fetchSinglePokemonApi } from '../../services/fetchPokemons';
-import { PokemonList } from '../../types/pokemon';
+import { fetchSinglePokemonApiByURL } from '../../services/fetchPokemons';
+import { PokemonURL } from '../../types/pokemon';
 import './singlePokemon.styles.sass';
 
-export default function SinglePokemon(props: PokemonList) {
+export default function SinglePokemon(props: PokemonURL) {
     const [pokemonFrontalSprite, setPokemonFrontalSprite] = useState<string>();
-    const { pokemons } = useGlobalContext();
+    const { pokemons, setPokemonName } = useGlobalContext();
     useEffect(() => {
         async function fetchPokemon() {
-            const { sprites } = await fetchSinglePokemonApi(props.url);
+            const { sprites } = await fetchSinglePokemonApiByURL(props.url);
             setPokemonFrontalSprite(sprites.front_default);
         }
         fetchPokemon();
     }, [pokemons]);
 
     return (
-        <div className="single-pokemon">
-            <img src={pokemonFrontalSprite} alt="" />
+        <div onClick={() => setPokemonName(props.name)} className="single-pokemon">
             <p>{props.name}</p>
+            <img src={pokemonFrontalSprite} alt="" />
+            <button className="pokemon-detail-btn">detalhe</button>
         </div>
     );
 }

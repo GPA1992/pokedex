@@ -20,13 +20,10 @@ const pokemonSlice = createSlice({
         builder.addCase(thunkGetPokemonByUsername.pending, (state) => {
             state.loading = true;
         });
-        builder.addCase(
-            thunkGetPokemonByUsername.fulfilled,
-            (state, action: PayloadAction<Sprites>) => {
-                state.loading = false;
-                state.pokemonSprites = action.payload;
-            }
-        );
+        builder.addCase(thunkGetPokemonByUsername.fulfilled, (state, action: PayloadAction<Sprites>) => {
+            state.loading = false;
+            state.pokemonSprites = action.payload;
+        });
     },
 });
 
