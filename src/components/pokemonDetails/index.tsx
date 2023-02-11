@@ -38,7 +38,7 @@ export default function PokemonDetails() {
                             </div>
                         ))}
                     </div>
-                    <div>
+                    <div className="name-img">
                         {pokemonDetail?.sprites && (
                             <div id="poke-card-img">
                                 <img
@@ -54,7 +54,7 @@ export default function PokemonDetails() {
                         {pokemonDetail?.stats?.map((allStat, index) => (
                             <div key={index} className="stat-bar">
                                 <span>{`${allStat.stat.name}: ${allStat.base_stat}`}</span>
-                                <div style={{ width: `${allStat.base_stat * 2}px` }} className="power-bar"></div>
+                                <div style={{ width: `${allStat.base_stat}px` }} className="power-bar"></div>
                             </div>
                         ))}
                     </div>
