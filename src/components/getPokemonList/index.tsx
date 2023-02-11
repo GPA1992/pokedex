@@ -19,7 +19,7 @@ export default function GetPokemonList() {
     }, [offset]);
 
     return (
-        <main className="list-btn">
+        <main id="list-bnt" className="list-btn">
             <section>
                 <PokemonDetails />
                 <div className="btn-box">
@@ -35,6 +35,23 @@ export default function GetPokemonList() {
                         Próximo
                     </button>
                 </div>
+
+                <div className="btn-box-small-width">
+                    <GetPokemonByName />
+                    <div className="small-width-btn">
+                        <button
+                            disabled={offset === 0}
+                            onClick={() => setOffset(offset - 20)}
+                            className="change-pokemons-list-btn"
+                        >
+                            Anterior
+                        </button>
+                        <button onClick={() => setOffset(offset + 20)} className="change-pokemons-list-btn">
+                            Próximo
+                        </button>
+                    </div>
+                </div>
+
                 <br />
                 <div className="pokemons">
                     {pokemons.map((poke, index) => (
@@ -42,6 +59,24 @@ export default function GetPokemonList() {
                             <SinglePokemon name={poke.name} url={poke.url} />
                         </div>
                     ))}
+                </div>
+                <div className="btn-box-small-width">
+                    <div className="small-width-btn">
+                        <a href="#list-bnt">
+                            <button
+                                disabled={offset === 0}
+                                onClick={() => setOffset(offset - 20)}
+                                className="change-pokemons-list-btn"
+                            >
+                                Anterior
+                            </button>
+                        </a>
+                        <a href="#list-bnt">
+                            <button onClick={() => setOffset(offset + 20)} className="change-pokemons-list-btn">
+                                Próximo
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </section>
         </main>
