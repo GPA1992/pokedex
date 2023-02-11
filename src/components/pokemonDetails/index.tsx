@@ -48,7 +48,7 @@ export default function PokemonDetails() {
                                 />
                             </div>
                         )}
-                        <h3>{pokemonDetail?.name.toUpperCase()}</h3>
+                        <h3>{pokemonDetail?.name}</h3>
                     </div>
                     <div className="power-stats">
                         {pokemonDetail?.stats?.map((allStat, index) => (
