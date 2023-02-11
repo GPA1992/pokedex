@@ -12,7 +12,7 @@ export default function GetPokemonByName() {
                 placeholder="Pesquise pelo nome ou número"
                 className="input-pokemon-name"
                 type="text"
-                onChange={({ target }) => setSearchPokemonName(target.value)}
+                onChange={({ target }) => setSearchPokemonName(target.value.toLocaleLowerCase())}
                 value={searchPokemonName}
             />
             <br />
