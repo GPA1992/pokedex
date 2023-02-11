@@ -20,7 +20,7 @@ export default function SinglePokemon(props: PokemonURL) {
             <a href="#pokemon-detail" className="pokemon-detail-btn">
                 <img className="poke-img" src={pokemonFrontalSprite} alt="" />
             </a>
-            <p>{props.name.toUpperCase()}</p>
+            <p>{props.name}</p>
         </div>
     );
 }
