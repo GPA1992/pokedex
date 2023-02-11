@@ -21,6 +21,7 @@ export default function GetPokemonList() {
     return (
         <div className="list-btn">
             <div>
+                <PokemonDetails />
                 <div className="btn-box">
                     <button
                         disabled={offset === 0}
@@ -34,7 +35,6 @@ export default function GetPokemonList() {
                         Próximo
                     </button>
                 </div>
-                <PokemonDetails />
                 <br />
                 <div className="pokemons">
                     {pokemons.map((poke, index) => (

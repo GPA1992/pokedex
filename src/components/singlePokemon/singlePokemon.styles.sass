@@ -9,9 +9,15 @@
     border-radius: 15px
     align-items: center
     justify-content: center
-    font-family: fira code
-    font-size: 12px
-    font-weight: 500
+    @media (max-width: 425px)
+        display: flex
+        flex-direction: column
+        height: 155px
+        width: 160px
+        background-color: #3b4ccaef
+        border-radius: 15px
+        align-items: center
+        justify-content: center
 
 .poke-img
     width: 110px

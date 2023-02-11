@@ -33,7 +33,7 @@ export default function PokemonDetails() {
                         <p>{`Altura: ${pokemonDetail?.height}`}</p>
                         <p>{`Peso: ${pokemonDetail?.weight}`}</p>
                         {pokemonDetail?.types?.map((allType, index) => (
-                            <div id="types" key={index}>
+                            <div className="types" key={index}>
                                 <p>{`Tipo ${allType.slot}: ${allType.type.name}`}</p>
                             </div>
                         ))}
