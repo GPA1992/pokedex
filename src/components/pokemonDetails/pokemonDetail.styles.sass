@@ -1,24 +1,94 @@
+@use '../../styles/variables'
 
 .pokemon-detail
     display: flex
-    flex-direction: column
+    flex-direction: row
     justify-content: center
     align-items: center
     height: 100%
 
+.pokemon-detail h3
+    text-align: left
+    font-size: 15px
+    font-family: roboto-bold
+    background-color: variables.$red-color
+    padding: 3px
+    margin: 35px
+    color: white
+    border-radius: 8px
+
 .all-detail
     display: flex
-    flex-direction: column
-    justify-content: space-evenly
+    flex-direction: row
+    justify-content: space-around
     align-items: center
-    background-color: rgba(255, 255, 255, 0.411)
+    width: 100%
     border-radius: 15px
+    @media (max-width: 425px)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+.base-stats
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-end
+    width: 30%
     height: 100%
-    width: 350px
+    padding: 5px
+    border-radius: 8px
+    margin: 10px
+    @media (max-width: 425px)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 100%
+        height: 30%
+        padding: 5px
+        border-radius: 8px
+        margin: 10px
+
+.base-stats p
+    text-align: left
+    font-size: 15px
+    font-family: roboto-bold
+    background-color: variables.$yellow-color
+    padding: 3px
+    margin: 2px
+    color: variables.$blue-color
+    border-radius: 8px
+    @media (max-width: 425px)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 100%
+        height: 30%
+        padding: 5px
+        border-radius: 8px
+        margin: 10px
+
+.types
+    @media (max-width: 425px)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        width: 100%
 
 .pokemon-detail-img-info
     border-radius: 15px
     width: 250px
+
+#poke-card-img
+    width: 30%
+    height: 100%
+    @media (max-width: 425px)
+        width: 100%
+        height: 30%
 
 .pokemon-statics
     display: flex
@@ -28,61 +98,40 @@
     width: 90%
 
 .all-detail h3
-    background-color: #77b6e09d
+    background-color: variables.$blue-color
     padding: 8px
-    font-family: fira code
-    color: black
+    font-family: roboto-bold
+    color: white
     border: 2px solid grey
     border-radius: 15px
     width: 90%
     text-align: center
     margin: 10px
 
-.pokemon-statics p
-    background-color: #e0d6779d
-    text-align: center
-    width: 90%
-    font-size: 12px
-    border: 1px grey solid
-    padding: 5px
-    font-family: fira code
-    font-weight: 500
-    color: black
-    border-radius: 8px
-    margin: 10px
-
-.stats
+.power-stats
     display: flex
     flex-direction: column
-    justify-content: center
-    width: 100%
-
-.stats
-    background-color: #b6b6e02a
-    text-align: center
-    font-size: 12px
-    padding: 5px
-    font-family: fira code
-    font-weight: 500
-    color: black
+    justify-content: left
+    width: 30%
     border-radius: 8px
-    margin: 10px
-
-.stats p
-    background-color: blue
-    text-align: center
-    font-size: 12px
-    padding: 5px
-    font-family: fira code
-    font-weight: 700
-    color: white
-    border-radius: 8px
-    margin: 10px
+    padding: 10px
+    margin: 20px 0px 0px 0px
+    height: 170px
+    @media (max-width: 425px)
+        width: 100%
+        height: 30%
 
 .stat-bar
     display: flex
     flex-direction: column
-    justify-content: center
+    justify-content: left
+
+.stat-bar span
+    text-align: left
+    font-size: 15px
+    font-family: roboto-bold
+    color: variables.$blue-color
+    border-radius: 8px
 
 #pokemon-info
     display: flex
@@ -91,16 +140,10 @@
     flex-direction: column
     width: 100%
 
-#pokemon-info p
-    width: 90%
-
-#types
-    width: 100%
-
 .power-bar
-    margin: 0px 10px 0px 10px
+    margin: 5px 0px 0px 0px
     display: flex
     justify-content: center
-    background-color: purple
+    background-color: variables.$yellow-color
     height: 5px
     border-radius: 10px

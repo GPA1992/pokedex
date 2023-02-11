@@ -1,69 +1,7 @@
-@font-face
-    font-family: "pokemon"
-    src: url("../../assets/fonts/Pokemon-Solid.ttf") format("truetype")
-
 .container-main
     display: flex
     align-items: center
     justify-content: center
     flex-direction: column
-    background-image: url('../../assets/POKEBOLA2.png')
-
-main
-    display: grid
-    grid-template-columns: 4fr 1fr
-    grid-template-rows: 1fr
-    grid-template-areas: "list details"
-    flex-direction: row
-    width: 1200px
-    overflow-x: hidden
-    @media (max-width: 425px)
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
-        width: 420px
-
-#paisagem
-    position: absolute
-    z-index: -1
-    opacity: 0.3
-
-#list
-    display: flex
-    flex-direction: column
-    grid-area: list
-
-#detail
-    display: flex
-    flex-direction: column
-    justify-content: space-around
-    grid-area: details
-    height: 100%
-    @media (max-width: 425px)
-        display: flex
-        flex-direction: column
-        justify-content: center
-        align-items: center
-        margin: 50px 0px 0px 0px
-        width: 420px
-
-#pokebola-img
-    height: 220px
-
-#poke-div
-    display: flex
-    flex-direction: column
-    justify-content: flex-end
-    align-items: center
-    font-family: pokemon
-    color: fira code
-    height: 40%
-
-h1
-    font-family: pokemon
-    color: blue
-
-#catchall-img
-    height: 150px
-    border-radius: 15px
+    background-size: cover
+    background-image: url('../../assets/PAISAGEM2.jpg')
