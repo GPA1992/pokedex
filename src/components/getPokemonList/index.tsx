@@ -19,7 +19,7 @@ export default function GetPokemonList() {
     }, [offset]);
 
     return (
-        <main id="list-bnt" className="list-btn">
+        <main className="list-btn">
             <section>
                 <PokemonDetails />
                 <div className="btn-box">
@@ -36,7 +36,7 @@ export default function GetPokemonList() {
                     </button>
                 </div>
 
-                <div className="btn-box-small-width">
+                <div id="list-bnt" className="btn-box-small-width">
                     <GetPokemonByName />
                     <div className="small-width-btn">
                         <button
