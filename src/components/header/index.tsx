@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <div>
             <header>
-                <img src={pokedexLogo} alt="" />
+                <img className="logo-img" src={pokedexLogo} alt="" />
             </header>
         </div>
     );

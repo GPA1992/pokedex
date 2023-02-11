@@ -23,7 +23,7 @@ export default function GetPokemonByName() {
                     setSearchPokemonName('');
                 }}
                 disabled={searchPokemonName.length === 0}
-                className="change-pokemons-list"
+                className="search-btn"
             >
                 Procurar
             </button>
